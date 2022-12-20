@@ -1,0 +1,201 @@
+:root {
+    --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --main-bg-color: #ffffff;
+    --accent-color: #4D5AE5;
+    --cloud-color: #F4F4FD;
+    --cornflower-color: #E7E9FC;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--primary-text-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.title {
+    color: var(--title-text-color);
+}
+
+/* Логотип */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.logo-studio {
+    color: var(--title-text-color);
+}
+
+/* Навігація сайту */
+.nav-menu-item {
+    color: var(--title-text-color);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.nav-menu-item:hover,
+.nav-menu-item:focus {
+    color: var(--accent-color);
+}
+
+.address-item {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.address-item:hover,
+.address-item:focus {
+    color: var(--accent-color);
+}
+
+/* Герой */
+.hero {
+    background-color: var(--title-text-color);
+}
+
+.hero .title {
+    color: var(--main-bg-color);
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.hero .btn {
+    display: inline-block;
+    font-family: inherit;
+    background: var(--accent-color);
+    color: var(--main-bg-color);
+    font-size: 16px;
+    line-height: 1.19;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    padding: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+}
+
+.hero .btn:hover,
+.hero .btn:focus {
+    background: #404BBF;
+}
+
+/* Блок "Наші переваги" */
+.advant .title,
+.portfolio .title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.advant .text,
+.team .text,
+.portfolio .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.works .title,
+.team .title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+
+/* Команда */
+.team {
+    background-color: var(--cloud-color);
+}
+
+.person-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+
+.team-card {
+    background-color: var(--main-bg-color);
+}
+
+/* Футер */
+.footer {
+    background-color: var(--title-text-color);
+}
+
+.footer .logo-studio {
+    color: var(--main-bg-color);
+}
+
+.footer .text {
+    color: var(--cornflower-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* Сторінка Портфоліо */
+.portfolio-sec {
+    background: var(--main-bg-color);
+}
+
+.portfolio-btn {
+    display: inline-block;
+    font-family: inherit;
+    background: var(--cloud-color);
+    color: var(--accent-color);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    border: 1px solid var(--cornflower-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background: var(--accent-color);
+    color: var(--main-bg-color);
+}
