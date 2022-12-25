@@ -87,7 +87,7 @@ body {
 
 /* --- HEADER --- */
 .header {
-    border: 1px solid var(--cornflower-color);
+    border-bottom: 1px solid var(--cornflower-color);
 }
 
 /* --- LOGO --- */
@@ -100,7 +100,6 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: var(--accent-color);
-    display: flex;
 }
 
 .logo-studio {
@@ -168,6 +167,10 @@ body {
 }
 
 /* --- HERO --- */
+.hero.section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
 
 .hero {
     background-color: var(--title-text-color);
@@ -181,7 +184,9 @@ body {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
+    max-width: 496px;
+    margin: 0 auto;
+    /* text-align: center; */
 }
 
 .hero .btn {
@@ -216,15 +221,19 @@ body {
 
 .advantages .list {
     display: flex;
+    gap: 24px;
 }
 
+.advantages .item {
+    width: calc(100% - 72px / 4);
+}
 .advantages .main-text {
     margin-top: 8px;
 }
 
-.advantages .item:not(:last-child) {
+/* .advantages .item:not(:last-child) {
     margin-right: 24px;
-}
+} */
 
 /* --- OUR WORKS --- */
 .works {
@@ -235,7 +244,7 @@ body {
 .works .list {
     margin-top: 72px;
     display: flex;
-    justify-content: space-between;
+    gap: 24px;
 }
 
 
@@ -249,7 +258,7 @@ body {
 .team .list {
     display: flex;
     margin-top: 72px;
-    justify-content: space-between;
+    gap: 24px
 }
 
 .team-card {
@@ -302,7 +311,6 @@ body {
 
 .portfolio-filter .list {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -332,6 +340,7 @@ body {
 .portfolio-btn:focus {
     background: var(--accent-color);
     color: var(--main-bg-color);
+    border: 1px solid var(--cornflower-color);
 }
 
 /* --- PORTFOLIO CARDS --- */
@@ -349,21 +358,24 @@ body {
 .portfolio.list {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
 .portfolio .item {
     width: calc(100% - 48 / 3);
 }
 
-.portfolio .item:not(:nth-child(3n)) {
+/* .portfolio .item:not(:nth-child(3n)) {
     margin-right: 24px;
 }
 
 .portfolio .item:not(:nth-last-child(-n+3)) {
     margin-bottom: 48px;
-}
+} */
 
 .portfolio-card-content {
     padding: 32px 16px;
     border: 1px solid var(--cornflower-color);
+    border-top: none;
 }
